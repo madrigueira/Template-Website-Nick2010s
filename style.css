@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+#bg{
     background-color: #f57c13;
 }
 
@@ -61,8 +61,11 @@ header .menu:hover{
     font-weight: 700;
     color: #fff;
     font-size: 3em;
-    margin: 25px 0 0 50px;
+    margin: 35px 0 0 50px;
     text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .banner .info .text{
@@ -74,7 +77,8 @@ header .menu:hover{
     margin: 5px 0 15px 35px;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 190px;
+    max-width: 480px;
+    max-height: 185px;
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
@@ -94,16 +98,25 @@ header .menu:hover{
 
 .banner .info .btn:hover{
     background-color: #ce680f;
+    color: #fff;
 }
 
 .banner .img{
     opacity: 0.6;
     margin: 0;
-    background-image: url(https://popeek.com.br/wp-content/uploads/2020/12/image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 0;
     overflow: hidden;
     width: 60%;
     height: 350px;
+}
+
+.banner .icarly{background-image: url(https://popeek.com.br/wp-content/uploads/2020/12/image.png);}
+.banner .victorious{background-image: url(https://occ-0-1068-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQ90vHPPuZzdWmmmaXvBvlfFn_qZWjjzYh-lhAqx1AI5fSBb4TvXhuiDMWy3h0TjwTHYpqonoQ3ixHwk7Kh89hKLaIan.jpg?r=7ee);}
+.banner .zoey101{background-image: url(https://febreteen.com.br/wp-content/uploads/2020/07/Zoey-101-1.jpg);}
+
+.carousel-control-prev, 
+.carousel-control-next{
+    width: 30px;
 }

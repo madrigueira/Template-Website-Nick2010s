@@ -56,28 +56,35 @@ header .menu:hover{
     height: 350px;
 }
 
-.banner .title{
+.banner .info .title{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #fff;
     font-size: 3em;
     margin: 25px 0 0 50px;
+    text-align: justify;
 }
 
-.banner .text{
+.banner .info .text{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
     text-align: justify;
     padding: 15px;
     margin: 5px 0 15px 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 190px;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
 }
 
-.banner .btn{
+.banner .info .btn{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding: 5px 15px 5px 15px;
-    margin-left: 45px;
+    margin-left: 50px;
     background-color: #f57c13;
     color: #fff;
     border-radius: 1px;
@@ -85,11 +92,12 @@ header .menu:hover{
     transition: 0.1s ease-in-out;
 }
 
-.banner .btn:hover{
+.banner .info .btn:hover{
     background-color: #ce680f;
 }
 
 .banner .img{
+    opacity: 0.6;
     margin: 0;
     background-image: url(https://popeek.com.br/wp-content/uploads/2020/12/image.png);
     background-repeat: no-repeat;
